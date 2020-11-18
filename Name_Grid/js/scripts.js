@@ -20,7 +20,7 @@ function add_to_list() {
     name_list.push(add_name); // places the add_name var into the name_list array
     print_names(); // prints all of the names in the index into the display_list element
     // quite_enough();
-    if (name_list.length == 8) { // once there are 9 indicies in the array the add_to_list button is disabled
+    if (name_list.length == 9) { // once there are 9 indicies in the array the add_to_list button is disabled
         document.getElementById("add_button").disabled = true;
     }
 }
