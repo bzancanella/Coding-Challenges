@@ -29,7 +29,7 @@ function add_to_list() {
 // and places them in the name_boxes
 function randomize_and_place() {
     for (i = name_list.length - 1; i > 0; i--) { // randomizes the index position of each item in the array
-        var n = Math.floor(Math.random() * (i + 1)); //excludes new indicies that have already been taken
+        var n = Math.floor(Math.random() * (i + 1)); // excludes new indicies that have already been taken
         [name_list[i], name_list[n]] = [name_list[n], name_list[i]];
     }
     place();
@@ -41,6 +41,7 @@ function place() {
         document.getElementById('box_' + i).innerHTML = name_list[i];
     }
 }
+
 // This function clears the names from the list and the name_boxes
 function clear_and_reset() {
     for (i = 0; i < name_list.length; i++) { // iterates through each name_box and clears the content, replacing it with &nbsp; to keep the boxes "inflated"

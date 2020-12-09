@@ -63,6 +63,7 @@ input[type=text] {
     width: 95%;
 }
 
+/* Custom Footer ***************************************************************/
 .watermark {
     display: flex;
     justify-content: center;

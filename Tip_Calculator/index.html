@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEADER section -->
+
+    <header>
+        <meta charset="utf-8">
+        <title>Tip Calculator</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+    </header>
+
+<!-- END HEADER section -->
+
+
+
+<!-- BODY section -->
+
+    <Body>
+        <div class="container">
+            
+
+
+
+<!-- TIP section -->
+
+            <div class="tip-calc container">   
+                <h1 class="title">Tip Calculator</h1>             
+                <form action="" id="tipForm" class="">
+                    <div class="meal-cost container">
+                        <label for="mealCost">Meal Cost</label><br>
+                        <input type="number" id="mealCost" name="mealCost"><br>
+                    </div>
+
+                    <div class="tip-section container">
+                        <h2>Tip Amount</h2>
+                        <input type="radio" id="perc15" value="1.15" name="perc">
+                        <label for="perc15">15%</label><br>
+                        
+                        <input type="radio" id="perc18" value="1.18" name="perc">
+                        <label for="perc18">18%</label><br>
+                        
+                        <input type="radio" id="perc20" value="1.2" name="perc">
+                        <label for="perc20">20%</label><br>
+                        
+                        <input type="radio" id="percCust" name="perc">
+                        <label for="percCust">Custom</label><br>
+                        
+                        <div class="cust-tip container">
+                            <label for="custTip">Custom Tip</label><br>
+                            <input type="number" id="custTip" name="custTip"><br>
+                            
+                            <input type="radio" id="custAmt" name="custom">
+                            <label for="custAmt">Amount</label><br>
+                            
+                            <input type="radio" id="custPerc" name="custom">
+                            <label for="custPerc">Percentage</label><br>
+                        </div>
+                    </div>
+                </form>                
+
+<!-- END TIP section -->
+
+
+
+<!-- BUTTON section -->
+
+                <div class="buttons container">
+                    <button type="sumbit" onclick="calcTip()">Calculate Tip</button>
+                    <button onclick="clearFields()">Clear</button>
+                </div>
+
+<!-- END BUTTON SECTION -->
+
+
+
+<!-- TOTAL section -->
+
+                <div class="total container">
+                    <h2>Total</h2>
+                    <p id="total"></p>
+                </div>
+            </div>
+
+<!-- END TOTAL section -->
+
+
+
+<!-- FOOTER section -->
+
+        <footer id="footer-grad" class="watermark">
+            <p>&#437;|&#581;|&#413;|&#571;|&#581;|&#413;|&#398;|&#321;|&#321;|&#581;</p>
+        </footer>
+
+<!-- END FOOTER section -->
+
+
+
+<!-- SCRIPT section -->
+
+        <script src="./js/scripts.js"></script>
+
+<!-- END SCRIPT section -->
+
+    </Body>
+
+<!-- END BODY section -->
+
+</html>
